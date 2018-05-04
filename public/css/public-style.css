@@ -1,0 +1,24 @@
+
+.minif-wrap{
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 30px;
+  left: inherit;
+}
+.box{
+  background-color: #eee;
+  color: #555;
+  padding: 5px;
+  margin: 10px;
+}
+.box-left{
+  float: left;
+  background-color: #ccc;
+}
+.box-isi{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  width: 400px;
+  float: left;
+}

@@ -1,0 +1,131 @@
+/* Responsive
+@media screen and (min-width: 500px) {
+    .wrapper{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+@media screen and (min-width: 800px) {
+    .wrapper{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+*/
+
+.my-wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 170px 1fr;
+	grid-template-rows: auto auto auto auto auto auto auto;
+	grid-template-areas:
+	/*". . . . . ."*/
+	"my-title my-title my-title my-title my-title my-title"
+	". my-header my-header my-header my-header ."
+	". my-content my-content my-content my-sidebar ."
+	". my-content my-content my-content my-sidebar ."
+	". my-subcontent1 my-subcontent2 my-subcontent3 my-sidebar ."
+	"my-footer my-footer my-footer my-footer my-footer my-footer"
+	". my-footer-note my-footer-note my-footer-note my-footer-note .";
+
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+.my-title{
+	grid-area: my-title;
+	background-color:#334d4a;
+}
+.my-header{
+	grid-area: my-header;
+	color:#fff;
+	grid-column:2/6;
+	grid-row:1;
+	margin:5px;
+}
+.my-sidebar{
+	grid-area: my-sidebar;
+	background-color:#fff;
+	padding:10px;
+}
+.my-content{
+	grid-area: my-content;
+	padding:10px;
+	background-color:#f6efef ;
+	color: #34495E;
+	/*
+	border-style: solid;
+	border-width:1px;
+	border-color:#cccccc;*/
+}
+.my-content p::first-letter{
+	/*font-weight:bold;*/
+	color:#ccc;
+}
+.my-subcontent1{
+	grid-area: my-subcontent1;
+	padding:5;
+	color: #ccc;
+	/*background-color:#f6efef;*/
+}
+.my-subcontent2{
+	grid-area: my-subcontent2;
+	padding:5;
+	color: #aaa;
+	/*background-color:#ceb6b6;*/
+}
+.my-subcontent3{
+	grid-area: my-subcontent3;
+	padding:5;
+	/*
+	background-color:#f6efef;
+
+	border-style: solid;
+	border-width:1px;
+	border-color:#cccccc;
+	*/
+}
+.my-footer{
+	grid-area: my-footer;
+	background-color:#ccc;
+}
+.my-footer-note{
+	margin:5px;
+	grid-area: my-footer-note;
+	color:#fff;
+	grid-column:2/6;
+	grid-row:6;
+}
+
+.img-bar {
+	/* width:100%; */
+	position: relative;
+	border-style: solid;
+	border-width:1px;
+	border-color:#cccccc;
+	background-color:#ffffff;
+	margin:2px;
+
+}
+
+.img-bar h2, .img-bar h3, .img-bar p{
+	margin:10px;
+	color:#0f0f0a;
+}
+.img-bar p{
+	font-size:10px;
+}
+
+.box-blue{
+	background-color:#5DADE2;
+	border-left:10px solid #34495E;
+}
+.box-blue h2{
+	color:#ffffff;
+	margin:5px;
+}
+.box-blue a{
+	text-decoration:none;
+}
+
+.box-blue p{
+	color:#ffffff;
+	margin:5px;
+}

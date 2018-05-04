@@ -1,0 +1,273 @@
+body{
+	margin:0;
+}
+
+.adm-wrapper{
+	display:grid;
+	grid-template-columns: 250px 1fr 1fr 1fr 1fr 0.1fr;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-template-areas:
+	". . . . . ."
+	"adm-sidebar adm-content adm-content adm-content adm-content ."
+	"adm-sidebar adm-content-2 adm-content-2 adm-content-2 adm-content-2 .";
+
+	grid-column-gap: 10px;
+	grid-row-gap: 20px;
+	background-color: #eee;
+}
+
+.adm-top{
+	background-color: #eee;
+}
+.adm-title{
+	grid-area: adm-title;
+	color:#fff;
+	background-color:#000;
+	position: fixed;
+	/*
+	grid-column:3/6;
+	grid-row:1;
+	*/
+	margin:5px;
+}
+
+.adm-sidebar{
+	grid-area: adm-sidebar;
+	background-color: #fff;
+	border-right:1px solid #ccc;
+	position: fixed;
+	width: 250px;
+	height: 100%;
+	overflow: scroll;
+	float: left;
+}
+
+.adm-sidebar hr{
+	border-color:#ccc;
+}
+
+/* Sidebar navigation */
+.adm-sidebar ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    /*background-color: #fff;*/
+}
+.adm-sidebar li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.adm-sidebar li a:hover {
+    background-color: #80ced6;
+    color: white;
+}
+/* End of Sidebar navigation */
+
+.adm-lib{
+	background-color: #b5e7a0;
+	width: 300px;
+	height:200px;
+	margin:5px;
+	padding:5px;
+
+	border-style: solid;
+	border-width:1px;
+	border-color:#ccc;
+
+	float: left;
+}
+.adm-cont{
+	background-color: #e3eaa7;
+	width: 300px;
+	height:200px;
+	margin:5px;
+	padding: 5px;
+
+	border-style: solid;
+	border-width:1px;
+	border-color:#ccc;
+
+	float:left;
+}
+.adm-view{
+	background-color: #d5e1df;
+	width: 300px;
+	height:200px;
+	margin:5px;
+	padding: 5px;
+
+	border-style: solid;
+	border-width:1px;
+	border-color:#ccc;
+
+	float: left;
+}
+.adm-bin{
+	background-color: #e6e2d3;
+	width: 300px;
+	height: 200px;
+	margin: 5px;
+	padding:5px;
+
+	border-style: solid;
+	border-width:1px;
+	border-color:#ccc;
+
+	float: left;
+}
+.adm-tools{
+	background-color: #e6e2d3;
+	width: 300px;
+	height: 200px;
+	margin: 5px;
+	padding:5px;
+
+	border-style: solid;
+	border-width:1px;
+	border-color:#ccc;
+
+	float: left;
+}
+.adm-api{
+	background-color: #d5e1df;
+	width: 300px;
+	height:200px;
+	margin:5px;
+	padding: 5px;
+
+	border-style: solid;
+	border-width:1px;
+	border-color:#ccc;
+
+	float: left;
+}
+.adm-media{
+	background-color: #ffe284;
+	width: 300px;
+	height:200px;
+	margin:5px;
+	padding: 5px;
+	float: left;
+
+	border-style: solid;
+	border-width:1px;
+	border-color:#ccc;
+
+}
+.adm-db{
+	background-color: #ffef96;
+	width: 300px;
+	height:200px;
+	margin:5px;
+	padding: 5px;
+	border-top:5px solid #34495E;
+	float: left;
+}
+.adm-db-table{
+	background-color: #fefbd8;
+	width: 300px;
+	height:200px;
+	margin:5px;
+	padding: 5px;
+	border-top:5px solid #34495E;
+	float: left;
+}
+.adm-db-post{
+	background-color: #e0e2e4;
+	width: 350px;
+	height:200px;
+	margin:5px;
+	padding: 5px;
+	border-top:5px solid #34495E;
+	float: left;
+}
+.adm-db-post2{
+	background-color: #fff;
+	margin:5px;
+	padding: 5px;
+	border-top:5px solid #34495E;
+}
+.adm-list{
+	font-size:12;
+	color:#555;
+	height:100%;
+	padding:5px;
+	overflow: scroll;
+
+	border-style: solid;
+	border-width:1px;
+	border-color:#ccc;
+
+}
+
+.adm-content{
+	grid-area: adm-content;
+	background-color: #fff;
+	padding: 5px;
+	margin: 5px;
+	overflow: auto;
+}
+.adm-content-2{
+	grid-area: adm-content-2;
+	background-color: #fff;
+	padding: 10px;
+	margin: 10px;
+
+}
+.title{
+	color:#fff;
+	margin:20;
+}
+
+.box-content{
+	background-color: #ecf2ea;
+	width:100%;
+	height:auto;
+	border-style: solid;
+	border-width:1px;
+	border-color:#cccccc;
+}
+
+.box-blue{
+	background-color:#5DADE2;
+	border-left:5px solid #34495E;
+}
+
+.box-blue h3{
+	color:#ffffff;
+	margin:2px;
+}
+.box-blue p{
+	color:#ffffff;
+	margin:2px;
+}
+.box-black{
+	color:#fff;
+	background-color:#555;
+	margin: 5px;
+	/*padding: 5px;*/
+}
+.box-black h3{
+	color:#fff;
+}
+.post-img{
+	color:#fff;
+	font-size: 12px;
+	background-color:#fff;
+	height:105px;
+	width:25%;
+	float:left;
+}
+.post-list {
+	color: #000;
+	background-color:#fff;
+	height:105px;
+	width:75%;
+	float:left;
+}
+.post-list h6{
+	color: #5DADE2;
+}
