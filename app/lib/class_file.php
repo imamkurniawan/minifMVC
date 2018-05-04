@@ -64,4 +64,3 @@ public function getFile($dir){
 }
 } /* end of Class */
 
-?>
