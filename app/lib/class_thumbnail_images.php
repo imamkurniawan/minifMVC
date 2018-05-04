@@ -103,4 +103,4 @@ function create_thumbnail_images() {
 } /* END of create_thumbnail_images() function */
 } /* END of Class */
 
-?>
+
