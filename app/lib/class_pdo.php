@@ -41,4 +41,32 @@ Class class_pdo{
 			$data[] = $row;
 		return $data;
 	}
+
+	public function getSpecificData($tabel,$field,$spesifik)
+	{
+		$query = $this->conn->query("SELECT * FROM $tabel where $field=$spesifik");
+		while ($row = $query->fetch(PDO::FETCH_ASSOC))
+			$data[] = $row;
+		return $data;
+	}
+
+	public function delAll()
+	{
+
+	}
+
+	public function delSpecifik()
+	{
+
+	}
+
+	public function getTable()
+	{
+
+	}
+
+	public function getColumn()
+	{
+
+	}
 }
