@@ -1,7 +1,7 @@
 minifMVC
 ========
 
-Code block:
+### Code block
     <?php
         print('Hello World!);
     ?>
