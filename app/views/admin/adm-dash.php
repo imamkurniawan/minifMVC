@@ -10,31 +10,44 @@ $list_conf = $data['conf'];
 $list_table = $data['table'];
 ?>
 
-<!--meta name="viewport" content="width=device-width, initial-scale=1.0" /-->
-<link rel="stylesheet" type="text/css" href="<?=HOME_PATH?>css/adm-layout.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="<?=HOME_PATH?>css/public-style.css">
 
-<style>
-/* Style for top button */
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--meta name="viewport" content="width=device-width, initial-scale=1.0" /-->
+	<link rel="stylesheet" type="text/css" href="<?=HOME_PATH?>css/adm-layout.css">
 
-#myBtn:hover {
-  background-color: #555;
-}
-/* End style for top button */
-</style>
+	<style>
+	/* Style for top button */
+	#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		border: none;
+		outline: none;
+		background-color: red;
+		color: white;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 10px;
+	}
+
+	#myBtn:hover {
+		background-color: #555;
+	}
+	/* End style for top button */
+	</style>
 </head>
 
 <body>

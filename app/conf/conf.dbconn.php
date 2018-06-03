@@ -4,5 +4,5 @@
 */
 define('host','localhost');
 define('user','root');
-define('password','');
+define('password','ramosismad');
 define('dbname','minif_db');

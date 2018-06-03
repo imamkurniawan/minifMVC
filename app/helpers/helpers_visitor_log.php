@@ -1,9 +1,9 @@
 <?php
+
+function get_visitor_info($log)
 /*
 * Get client information data and write them to a log
 */
-
-function get_visitor_info($log)
 {
   $IP = $_SERVER['REMOTE_ADDR'];
   $time = date('Y-m-d H:i:s');
@@ -19,11 +19,11 @@ function get_visitor_info($log)
   fclose($fp);
 }
 
+function save_visitor_info($log)
 /*
 * Save visitor info from log file to MySQL Table
 * Clear the log file
 */
-function save_visitor_info($log)
 {
   // Prepare database
   $simpan_log = new class_mysql(host,user,password,dbname);

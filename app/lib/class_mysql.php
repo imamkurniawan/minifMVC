@@ -1,13 +1,12 @@
 <?php
-/*
-********************************************************************
-*	Class database
-*	class untuk menghandle database MySQL dengan mysql Extension.
-* TIdak bisa digunakan di PHP7
-*	Author : imam kurniawan
-*	first UPDATE : 2015
-*	last UPDATE : 2017 Sept 24
-********************************************************************
+/**
+ *	Class database
+ *	class untuk menghandle database MySQL dengan mysql Extension.
+ * 	Tidak bisa digunakan di PHP7
+ *	Author : imam kurniawan
+ *	first UPDATE : 2015
+ *	last UPDATE : 2017 Sept 24
+ *
 */
 
 // Menggunakan mysql extention (standard)

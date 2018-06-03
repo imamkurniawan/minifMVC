@@ -9,4 +9,3 @@ class class_imam
   }
 }
 
-?>

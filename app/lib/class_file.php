@@ -1,4 +1,16 @@
 <?php
+/**
+ *	Kelas untuk membaca isi folder dan menampung properties dari file yang ada
+ *	Author : Imam Kurniawan (imamkurniawan.ntb@gmail.com)
+ *
+ *	Contoh penggunaan :
+ *		$kelas = new class_file('contents/img');
+ *		print_r($kelas);
+ *		foreach($kelas->file_property as $list)
+ *		{
+ *			echo $list['filename'] . "<br>";
+ *		}
+ */
 
 Class class_file{
 public $file_property = array();

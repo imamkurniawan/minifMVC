@@ -1,5 +1,6 @@
 <?php
 /*
+* Controller
 * Contoh menggunakan model posts yang menggunakan librari class_mysql
 * Contoh ini tidak bisa digunakan pada PHP7
 */

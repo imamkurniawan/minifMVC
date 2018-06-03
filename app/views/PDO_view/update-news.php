@@ -13,7 +13,7 @@
 echo "News ID : ".$data['posts'][0]['id'];
 ?>
 <div class="box">
-  <form action="<?php echo HOME_PATH; ?>news/updateNews" method="post">
+  <form action="<?php echo HOME_PATH; ?>news_PDO/updateNews" method="post">
     <input type="hidden" name="id" value="<?php echo $data['posts'][0]['id']; ?>" />
     Title<br><input type="text" name="title" value="<?php echo $data['posts'][0]['title'];?>" size="50" /> <br>
     <!--input type="text" name="content" size="50" value="<?php //echo $data['posts'][0]['posts']; ?>" /-->

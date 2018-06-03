@@ -2,7 +2,7 @@
 /*
 * Library class pdo
 * untuk menghandle database menggunakan teknik PDO
-* Author : Imam Kurniawan
+* Author : Imam Kurniawan (imamkurniawan.ntb@gmail.com)
 *
 */
 
@@ -50,14 +50,27 @@ Class class_pdo{
 		return $data;
 	}
 
-	public function delAll()
+	public function delAll($table)
 	{
-
+		$query = "DELETE FROM $tabel"; 
+		$this->conn->query($query);
 	}
 
-	public function delSpecifik()
+	public function delSpecific($tabel,$field,$spesifik)
 	{
+		$query = "DELETE FROM $tabel WHERE $field=$spesifik";
+		$this->conn->query($query);
+	}
 
+	public function query($query="")
+	{
+		$this->conn->query($query);
+	}
+
+	public function updateData($tbl,$field,$newvalue,$keyfield,$keyvalue)
+	{
+		$query = "UPDATE $tbl SET $field='$newvalue' where $keyfield=$keyvalue";
+		$this->conn->query($query);
 	}
 
 	public function getTable()

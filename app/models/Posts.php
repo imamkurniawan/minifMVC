@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Model
+ */
 class Posts
 {
   public $id;
