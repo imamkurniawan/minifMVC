@@ -1,5 +1,6 @@
 <?php
 /**
+* getCountOfMonth()
 * Fungsi untuk mengambil jumlah hari pada 1 bulan
 * Input => tahun dan bulan
 * Output berupa Array => jml_hari, tgl_terakhir, dan das_3 (Jumlah hari dasarian 3)
@@ -30,8 +31,50 @@ function getCountDaysOfMonth($year="",$month="")
 		echo "Error, make sure input number";
 	}
 }
-$year = date('Y');
-$month = date('m');
 
-$day = getCountDaysOfMonth($year,08);
-print_r($day);
+/**
+* validasiDataDasarian()
+* fungsi untuk melakukan validsi data hujan dasarian yang dikirim oleh pengamat
+* input -> year, month, dasarian, data (format data hujan yang dikirimkan)
+* menggunakan fungsi getCountDaysOfMonth() untuk ekstraksi jumlah hari
+* output -> hasil validasi (true atau false)
+* true jika dicetak menghasilkan string ('1') sedangkan false ('')
+*/
+function validasiDataDasarian($year="",$month="",$das="",$data="")
+{
+	$day = getCountDaysOfMonth($year, $month);
+	if($das == 3)
+	{
+		$jml_hari = $day['das_3'];
+	}
+	elseif($das == 1 | $das == 2)
+	{
+		$jml_hari = 10;
+	}
+	else
+	{
+		$val = "Error month";
+	}
+	$arr_data = explode(" ",$data);
+	//print_r($arr_data);
+	$count = count($arr_data);
+	if($jml_hari == $count-1)
+	{
+		$val = true;
+	}
+	else
+	{
+		$val = false;
+	}
+	return $val;
+}
+
+$val = validasiDataDasarian(2021,02,3,'092020b - - - - - - - 10.45');
+if ($val == true)
+{
+	echo "<script> alert('Benar') </script>";
+}
+else 
+{
+	echo "<script> alert('Salah') </script>";
+}
